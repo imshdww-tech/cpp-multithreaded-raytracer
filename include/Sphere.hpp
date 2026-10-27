@@ -30,7 +30,7 @@ public:
 
         // Find the nearest root that lies in the acceptable range
         auto root = (-halfB - sqrtd) / a;
-        if (root < tMin || rootMax < root) {
+        if (root < tMin || tMax < root) {
             root = (-halfB + sqrtd) / a;
             if (root < tMin || tMax < root)
                 return rec;
